@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    --text-color-left: #FFFFFF;
+    --text-color-right: #111111;
+    --background-color-left: #111111;
+    --background-color-right: #FFFFFF;
+}
+
+/*O seletor Webkit é um mecanismo que permite que a gente renderize e modifique os elementos do navegador*/
+::-webkit-scrollbar {
+    width: 8px; /*Define a largura da scrollbar*/
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2c2c31; /*Define a cor de caminho da scrollbar*/
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9e9ea0; /*Define a cor da scrollbar*/
+}
+
+/*O keyframes é um recurso do CSS que permite criar animações personalizadas, definindo diferentes estágios e estilos para os elementos ao longo da animação;*/
+@keyframes entering {
+    from {
+        opacity: 0;
+        transform: translateY(-200px); /*Manipula posição na vertical*/
+    }
+    to {
+        transform: translateY(0px); /*Manipula posição na vertical*/
+    }
+}
+
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 1.25rem;
+}
+
+.left {
+    padding: 1rem;
+    width: 30%;
+    background-color: var(--background-color-left);
+}
+
+.Diogo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-left);
+    text-align: center;
+}
+
+
+
+.Diogo img {
+    width: 18rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+
+.right {
+    right: 0;
+    width: 70%;
+    padding: 1rem;
+    background-color: var(--background-color-right);
+}
+
+section {
+    padding-bottom: 2rem;
+}
+
+.experience {
+    padding-bottom: 2rem;
+}
